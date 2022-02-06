@@ -1,0 +1,17 @@
+{
+    "name": "vendor/pos",
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pos\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Empflix",
+            "email": "75549181+Empflix@users.noreply.github.com"
+        }
+    ]
+}
