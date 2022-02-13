@@ -1,26 +1,29 @@
 <?php
 namespace Pos;
 
-use login\Login;
-use menu\Menu;
 
-class App
-{
-    public function run()
+use JetBrains\PhpStorm\NoReturn;
+use Pos\Login\Login;
+    use Pos\Menu\Menu;
+
+    class App
     {
-        while(true)
+        #[NoReturn] public function run()
         {
-              $login = new Login();
-              $user = $login->getUser();
-              $menu = new Menu($user);
-              $menu->showMenu();
+            while(true)
+            {
+                $login = new Login();
+                $user = $login->logIn();
+
+                $menu = new Menu($user);
+                $menu->showMenu();
+
+            }
 
         }
 
+
+
+
+
     }
-
-
-
-
-
-}

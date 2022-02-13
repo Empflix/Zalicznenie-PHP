@@ -1,6 +1,6 @@
 <?php
 
-namespace user;
+namespace Pos\User;
 
 class User
 {
